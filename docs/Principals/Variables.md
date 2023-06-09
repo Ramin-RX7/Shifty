@@ -27,7 +27,7 @@ In variables mapping each variable should point to an id or another variable.
                 "id" = id
 
 
-When there are no variables in `variables mapping` that points to a specific object, the object will be deleted.
+For each object in `Objects mapping` if there won't be at least one variable pointing to it, it will be deleted.
 
 
 ## Demonstration of how this works in action
@@ -44,10 +44,14 @@ When setting pointer of a variable as another variables value, basically what ha
 
 (*This is not the same as c++ pointers where a variable can holds the memory address of another variable of a specific type. No such thing as a pointer variable exist*)
 
-Different use of this:
-- When sending them as a function argument, the actual object will be sent.
-- When trying to set a new value to a variable but still need previous object it used to hold.
+Different use of this:\
+    &nbsp; &nbsp; When sending them as a function argument, the actual object will be sent.\
+    &nbsp; &nbsp; When trying to set a new value to a variable but still need previous.
 
+    // Example:
+    a = 5
+    b = &a     // suppose `&` makes a pointer of an object in our language
+    b += 1     // as both `a` and `b` points to same memory address, now both of them are equal to 6
 
 
 ## Making copy of a variable
@@ -56,3 +60,7 @@ Whenever a variable is set to another variable's name, a copy of that will be ta
 This act needs implementation of `copy` special method in variables type/class definition.
 Default implementation of copy (in `type` class) is to return an instance of the same type, with copying (deep-copying) attributes and methods of the object.
 
+    // Example:
+    a = 5
+    b = a      // This will take a copy of `a`
+    b += 1     // now `b` equals to 6 and `a` remains 5
