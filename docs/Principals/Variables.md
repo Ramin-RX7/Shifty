@@ -30,10 +30,20 @@ In variables mapping each variable should point to an id or another variable.
 For each object in `Objects mapping` if there won't be at least one variable pointing to it, it will be deleted.
 
 
-## Demonstration of how this works in action
+### Demonstration of how this works in action
 
-Let's say both "a" and "b" are variables pointing to the same object.\
-When "a" changes something in it's object, because "b" refers to the same memory location, the value of "b" also changes. if "a" is deleted (for any reason)(like manually or coming out of scope), "b" still points to the location it used to point and object remains in the memory.
+> Let's say both "a" and "b" are variables pointing to the same object.\
+> When "a" changes something in it's object, because "b" refers to the same memory location, the value of "b" also changes.\
+> if "a" is deleted (for any reason)(like manually or coming out of scope), "b" still points to the location it used to point so object remains in the memory.
+
+
+
+## Declaring variable type
+
+Variables must be initialized in their declaration time.\
+Variables are not forced to explicitly define their type in declaration.\
+(*waiting for decision to be made*) function parameters must declare their type.\
+(*waiting for decision to be made*) function return type is not neccessarily but can be defined (if defined then need to be checked after calls)
 
 
 
@@ -54,6 +64,7 @@ Different use of this:\
     b += 1     // as both `a` and `b` points to same memory address, now both of them are equal to 6
 
 
+
 ## Making copy of a variable
 
 Whenever a variable is set to another variable's name, a copy of that will be taken and set to the new variable.
@@ -64,3 +75,17 @@ Default implementation of copy (in `type` class) is to return an instance of the
     a = 5
     b = a      // This will take a copy of `a`
     b += 1     // now `b` equals to 6 and `a` remains 5
+
+
+
+## Note about classes, functions and modules
+
+Beside having 2 mappings for objects and variables, there's a mapping for the ones mentioned above called `Factories Mapping` with a structure defined below.
+
+    Name = Mapping:
+                "type" = type
+                "data" = Mapping :
+                            // This varies for each of them
+                            // (Not implemented yet)
+
+No variables are allowed to be created with a name that exists in this mapping. If a variable has already been created with a name and then a class/function/module with the same name is declared, error will be raised.
