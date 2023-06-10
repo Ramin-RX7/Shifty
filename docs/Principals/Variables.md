@@ -89,3 +89,19 @@ Beside having 2 mappings for objects and variables, there's a mapping for the on
                             // (Not implemented yet)
 
 No variables are allowed to be created with a name that exists in this mapping. If a variable has already been created with a name and then a class/function/module with the same name is declared, error will be raised.
+
+
+
+
+# Todo/Notes of this doc:
+
+Check marks-and-sweep algorithm for garbage collection system
+
+Some algorithms to stop cyclic references when using marks-and-sweep: Cheney's algorithm, Baker's algorithm, and the "two-finger" algorithm
+
+**Object Pooling System**:
+
+- Using object-pooling and concurrent garbage collection system at the same time (hybrid grabage collector)
+- Users be able to set a flag when making classes to indicate wether objects of this class should be pooled in object pooling system or not.
+- ? Using a fixed size object pooling system or dynamic sized?
+- ? Let the size of the pool be configurable by user?
