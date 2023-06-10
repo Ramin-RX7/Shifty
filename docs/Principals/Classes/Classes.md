@@ -24,7 +24,7 @@ These methods implement extra bits to objects.
 
 When working with functions sometimes may a call comes with wrong argument types. For situations like this, classes can implement a method which will convert their object to the corresponding class when facing errors like this. Also all classes can implement a method which will try to convert given type to their own selves.
 
-**NOT IMPLEMENTED:**
+**NOT IMPLEMENTED (Waiting for decision):**
 when we have 2 different classes "A" and "B", if "A" needs to be casted to "B" and "A" has implemented the method to convert to "B" but also "B" has implemented method to recieve from "A", What should happen?
 
     1: Only receiver should work
