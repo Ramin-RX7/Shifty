@@ -18,6 +18,9 @@ list of methods:
 - **includes**: used in "`in`" expression.
 - **iter**: will be called in each iteration of for loop
 - **call**: when instance is called
+- **constructor**: used to initialize the instance
+- **destructor**: used for cleanups when the instance is being deleted from memory.
+> (waiting for decision) Should there be a method to initialize the instance implicitly when a variable is declared but not initialized by the user? if the language allow user to declare a variable without explicitely initializing it, this feature must exist.
 
 
 
