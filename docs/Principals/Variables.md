@@ -47,21 +47,22 @@ Variables are not forced to explicitly define their type in declaration.\
 
 
 
-## Pointers
+## References
 
-Pointers are a way of setting variables value, where the variable will point to the same object that another variable point to.
-When setting pointer of a variable as another variables value, basically what happends is that the `id` of the former will be set as the `id` of the defining variable.
+Refrences are a way of getting the object a variable is pointing to.
+When setting reference of a variable as another variables value, basically what happends is that the `id` of the former will be set as the `id` of the defining variable. So any changes to either of them (changes in object) will also affect the other one.
 
-(*This is not the same as c++ pointers where a variable can holds the memory address of another variable of a specific type. No such thing as a pointer variable exist*)
+(*This differs from c++ references at some points.*)
 
 Different use of this:\
-    &nbsp; &nbsp; When sending them as a function argument, the actual object will be sent.\
-    &nbsp; &nbsp; When trying to set a new value to a variable but still need previous.
+    &nbsp; &nbsp; When sending them as a function argument, the actual object will be sent. (read more [here](/docs/principals/Functions.md/#parameters))\
+    &nbsp; &nbsp; When trying to set a new value to a variable but still need previous.\
+    &nbsp; &nbsp; When we want to make an alias for a variable
 
     // Example:
     a = 5
-    b = &a     // suppose `&` makes a pointer of an object in our language
-    b += 1     // as both `a` and `b` points to same memory address, now both of them are equal to 6
+    b = &a     // suppose `&` makes a reference of variable in our language
+    b += 1     // as both `a` and `b` points to same object, now both of them are equal to 6
 
 
 
