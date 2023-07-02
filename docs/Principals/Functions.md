@@ -24,9 +24,17 @@ Even though restricting variable access to functions makes them purer, there is 
 When a function is called with arguments, a copy of all of the given arguments are created, then sent to the function.
 So when the function executes, it will receive new (copied) objects which will be destroyed when the function returns.
 
+
 ### Reference parameters
 
 When defining functions, it's possible to define a parameter that receives only reference.
 This way you can manipulate with objects defined outside of the function.\
 If a function parameter is set to accept references, when calling the function, only references are acceptable and normal variables will result in error.\
 But when the parameter is declared normally, and in a certain call a reference is passed, not only no error will be raised but also the real object (not the copy of it), will be passed to the function.
+
+
+### read-only parameters
+
+These type of parameters sets the argument given in the function call `read-only`.
+Which means the value they hold can not be changed in the function body.
+This is useful with `Reference Paramters` as it guarantees that passing a reference of an object to the function will not change the value of it at all.
