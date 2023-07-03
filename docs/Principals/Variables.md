@@ -4,18 +4,18 @@
 To store variables we use 2 different mappings. One for objects and one for variables.
 
 
-In objects mapping first we generate a unique id, this id will be the key. The value is a mapping shown below.
+In objects mapping first we generate a unique id, this id will be the key. The data is a mapping shown below.
 
 *Objects Mapping:*
 
-    "id" = Mapping:
-                "value" =  Mapping:  // data of the instance (based on type)
+    id = Mapping:
+                "data" =  Mapping:  // data of the instance (based on type)
                                 "attributes" =  Mapping:
                                                     name = id
                                 "methods"    =  Mapping:
                                                     name = id
-                "lock"  =  bool      // if the value is locked for access
-                "const" =  bool      // if the value is a constant
+                "lock"  =  bool      // if the object is locked for access
+                "const" =  bool      // if the object/variable is a constant
 
 
 In variables mapping each variable should point to an id or another variable.
@@ -23,7 +23,7 @@ In variables mapping each variable should point to an id or another variable.
 *Variables Mapping:*
 
     name = Mapping:
-                "scope" = scope_name
+                "scope" = scope
                 "id" = id
 
 
@@ -95,6 +95,8 @@ No variables are allowed to be created with a name that exists in this mapping. 
 
 
 # Todo/Notes of this doc:
+
+Scopes implementation
 
 Check marks-and-sweep algorithm for garbage collection system
 
