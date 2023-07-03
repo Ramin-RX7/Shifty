@@ -42,15 +42,15 @@ For each object in `Objects mapping` if there won't be at least one variable poi
 
 Variables must be initialized in their declaration time.\
 Variables are not forced to explicitly define their type in declaration.\
-(*waiting for decision to be made*) function parameters must declare their type.\
-(*waiting for decision to be made*) function return type is not neccessarily but can be defined (if defined then need to be checked after calls)
+function parameters must declare their type.\
+function return type is neccessarily but can be dropped in syntax if no return is in the function.
 
 
 
 ## References
 
 Refrences are a way of getting the object a variable is pointing to.
-When setting reference of a variable as another variables value, basically what happends is that the `id` of the former will be set as the `id` of the defining variable. So any changes to either of them (changes in object) will also affect the other one.
+When setting reference of a variable as another variables value, basically what happens is that the `id` of the former will be set as the `id` of the defining variable. So any changes to either of them (changes in object) will also affect the other one.
 
 (*This differs from c++ references at some points.*)
 
