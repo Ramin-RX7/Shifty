@@ -38,3 +38,6 @@ But when the parameter is declared normally, and in a certain call a reference i
 These type of parameters sets the argument given in the function call `read-only`.
 Which means the value they hold can not be changed in the function body.
 This is useful with `Reference Paramters` as it guarantees that passing a reference of an object to the function will not change the value of it at all.
+
+> (waiting for decision) Should `read-only` parameter be a guarantee by the language or by the function?
+(by language makes it more sensible but it costs a lot of time to change reference object attributes to constant then switch them back. By function makes it less secure but it makes it much faster as no changes are needed)
