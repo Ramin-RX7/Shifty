@@ -18,6 +18,7 @@ list of methods:
 - **includes**: used in "`in`" expression.
 - **iter**: will be called in each iteration of for loop
 - **call**: when instance is called
+- **copy**: returns the new object when taking a copy of the object
 - **constructor**: used to initialize the instance
 - **destructor**: used for cleanups when the instance is being deleted from memory.
 
@@ -39,6 +40,8 @@ List of unary operators:
 - "**!**"
 
 > Need decision to be made: `@ $ % ^ & * - ~`
+
+read more about `operator-methods` [here](/docs/principals/Classes/Methods/Operators.md)
 
 
 
