@@ -17,6 +17,7 @@ Table of accessibility in function bodies:
 
 Even though restricting variable access to functions makes them purer, there is a way to access objects within the function scope. This can happen when passing a reference as an argument to the function (This is explained in [Parameters](#parameters) section).
 
+Function overloading will not be supported since functions must be able to only perform one task that can be done on any type of parameters they accept. In `f(x)` if `x` can be of both `MyClass` and `OtherClass`, main body of the function should not differ for each of these types. Instead the data that is needed from their instances must be mined on the first lines of the function via if-elif-else clause and the rest of the function must be the same. If function body differs for different types of parameters, a new function must be defined for that purpose.
 
 
 ## Parameters
