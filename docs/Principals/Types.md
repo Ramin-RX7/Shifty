@@ -22,6 +22,8 @@ Unions are a way to set multiple acceptable types to variables.
     func f(x) -> int|float {...}     // only return an int or a float
 > The syntax used above for Unions is just for example purposes (since syntax of the language is not implemented yet)
 
+Unions are a type themselves and there can be instances of them. This means a function parameter can accept only Unions as it's type (if useful in any case). Read more about Union class in it's own documentation.
+
 
 ## Type Aliases
 
@@ -30,12 +32,14 @@ Let's say we have a fucntion called `f` with parameter `x` where `x` can be an `
 
     func f(x:int|float){...}
 
-But it is clear that not only this will make code less readable but also the same thing can happen in so many functions. In this situation `Type-aliases` helps us for a more readable code on the side of writing less code.\
-Type aliases are variables that hold groups of types (1 and more). A simple example is given below
+But it is clear that not only this will make code less readable but also the same thing can happen in so many functions. In this situation `Type-aliases` helps us with writing less code on the side of a more readable code.\
+Type aliases are *variables* that hold `Union` objects. A simple example is given below
 
     Number =  int | float
     func f(x:Number) -> Number {...}
 
-Here we define a variable called `Number` which holds both `int` and `float`.\
-In the next line, the `x` parameter in `f` accepts instances of type `Number` which means it can take `int` and `float`. Also the return type is `Number` which means it will be either `int` or `float`.\
+Here we define a type-alias variable for the types that are numbers, called `Number` which points to a Union instance that holds `int` and `float`.\
+In the next line, the `x` parameter in `f` accepts instances of type `Number` which means it can take instances of either `int` and `float`. Also the return type is `Number` which means it will be either an `int` or a `float`.\
 Note that this is the same as Unions where using uncertain return type is discouraged (but not disallowed).
+
+So basically type aliases work the same as Unions but the difference is that the Union is an object type itself, while Type-Alias is what we call a variable that points to an Union object.
