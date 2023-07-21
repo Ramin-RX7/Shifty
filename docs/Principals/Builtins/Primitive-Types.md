@@ -1,36 +1,9 @@
-# Builtins: Classes:
-
-Built-in classes may have more control over their objects and can have their own structure of `objects mapping`.\
-No method/attribute can be overwritten in builtin types. Even classes that inherit from them.
-
-## List of built-in types/classes/instances:
-
-
-## boolean
-
-Boolean is a type that only has two instances of `true` and `false`. These two are the way to detemine wether a condition is met or not.
-Both of these instances can be directly used in the code but no trace of `Boolean` itself can be seen in the code.
-
-> (Waiting for decision) Boolean must be implemented by enums instead of types. (As this needs more deep thoughts, no blueprint implementation of Boolean will be defined now.)
-
-All conditions (e.g if-else, while) will implicitely be casted to Boolean. This happens via `bool` function mentioned above.
-This casting is possible to fail as some types might not implement casting to `Boolean`.
-
-
-
-## null
-
-`null` is used to define a variable that does not hold a value. Essentially it shows the lack of value. The usage of this comes in handy in conjuction with `Optional`s where a certain operation might result in error but needs to be caught.
-
-> `null` can be defined with an enum that contains only `null`.
-
-Although the usage of null is not the same as `false` at all, `null` has a falsy value means in conditions it is converted to `false`. Also `null` is equal to itself only. `null` keyword can be used directly in the code.
-
+# Builtins: Primitive types
 
 
 ## Integer
 
-(Primitive type) Integer type (128-bit) can hold integer types. Any optimizations by the language is allowed, 128-bit is only the limitation range.
+(Primitive type) Integer type (128-bit) can hold integer types. 128-bit is only the limitation range and any optimizations by the language is allowed.
 
 **Meta methods:**
 
@@ -82,4 +55,36 @@ Although the usage of null is not the same as `false` at all, `null` has a falsy
 
     Integer -> (Might fail) Same String but in Integer format.
     Float   -> (Might fail) Same String but in Float format. (adds `.0` to make it if it's integer like string)
+    Iterable -> Sends each character as argument to the constructor
 
+<br>
+
+
+
+
+# Language-Specific Constants
+
+
+
+## Booleans (true/false)
+
+`Boolean` must be a builtin enum in the language, which only contains 2 elements: `true` and `false`.\
+These two detemine wether a condition is met or not.
+Both of these elements can be directly used in the code but no trace of `Boolean` itself can be seen in the code.
+
+All conditions (e.g if-else, while) will implicitely be casted to Boolean elements. This happens via `bool` function mentioned above.
+This casting is possible to fail as some types might not implement casting to `Boolean`.
+
+> (Waiting for decision) `Boolean` enum be hidden from users
+
+
+
+## null
+
+`null` is used to define a variable that does not hold a value. Essentially it shows the lack of value. The usage of this comes in handy in conjuction with `Optional`s where a certain operation might result in error but needs to be caught.
+
+`null` is defined with an enum that contains only `null`.
+
+> (Waiting for decision) `Boolean` enum be hidden from users
+
+> Although the usage of null is not the same as `false` at all, `null` has a falsy value means in conditions it is converted to `false`. Also `null` is equal to itself only. `null` keyword can be used directly in the code.
