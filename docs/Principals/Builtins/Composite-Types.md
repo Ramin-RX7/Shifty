@@ -1,7 +1,6 @@
 # Builtins: Composite types
 
-Built-in classes may have more control over their objects and can have their own structure of `objects mapping`.\
-No method/attribute can be overwritten in builtin types. Even classes that inherit from them.
+Composite types consist of types that are a bit more complex than Primitive types. Mostly the types defined here are collection types which means they are a data type that can hold multiple of instances of other types.
 
 
 ## Tuple
