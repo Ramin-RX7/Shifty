@@ -24,6 +24,8 @@ list of methods:
 
 > (waiting for decision) Should there be a method to initialize the instance implicitly when a variable is declared but not initialized by the user? if the language allow user to declare a variable without explicitely initializing it, this feature must exist.
 
+read more about `meta-methods` [here](/docs/principals/Classes/Methods/Metas.md)
+
 
 
 ## Operator Methods
@@ -47,16 +49,6 @@ read more about `operator-methods` [here](/docs/principals/Classes/Methods/Opera
 
 ## Casting methods (Type conversion)
 
-Third group includes methods that handle how to cast instances of other classes into this class.\
-When working with functions sometimes may a call comes with wrong argument types. let's say we have `f(x)` where `x` must be of type `MyClass`. if we call `f` with an instance of `OtherClass` as `x` argument, we must get an error. But because `MyClass` has implemented the casting method for `OtherClass` instances, `x` argument we sent will be converted to `MyClass` and the program keeps working correctly.
+Casting methods let the class instance be converted to other types. This behavior is important as one of the key features of the language which is implicit casting uses these methods a lot.
 
-**NOT IMPLEMENTED (Waiting for decision):**\
-*Outgoing Casting*: Implement how to cast from this class to another.\
-This approach is even better than the way mentioned above as it makes the functions to accept common types and when passing an uncommon type to the function, it is the uncommon type responsibitlity to implement the casting method.
-
-Question: when we have 2 different classes "A" and "B", if "A" needs to be casted to "B" and "A" has implemented the method to convert to "B" but also "B" has implemented method to recieve from "A", What should happen?
-
-    1: Only receiver should work
-    2: Only sender should work
-    3: Both receiver and sender should work (order is important)
-    4: Error should occur
+read complete doc of `operator-methods` [here](/docs/principals/Classes/Methods/Casting.md)
