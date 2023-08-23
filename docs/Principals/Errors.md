@@ -37,3 +37,25 @@ Some advantages of this:
   - `Error` at then end of them
 
 
+
+## BaseError
+
+As said previously, all errors inherit from `BaseError`. `BaseError` is an abstract class (which means can not be instanciated) with having some default attributes/behavior set for the children classes.
+
+
+### Error are false as booleans
+
+All error objects always have a false boolean value. This can not be overwritten.
+
+
+### Error are catchable
+
+BaseError has the `catchable = true` which means any class inheriting from it will be catchable unless it sets the `catchable` explicitely to `false`.
+
+
+### Language mappings are not given by default
+
+Due to inefficient task of sending and keeping all 3 mappings to an instance (and also less importance), BaseError sets these attributes to false so mapping will not be sent.
+- objects_mapping
+- variables_mapping
+- factories_mapping
