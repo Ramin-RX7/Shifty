@@ -59,3 +59,43 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 - objects_mapping
 - variables_mapping
 - factories_mapping
+
+
+### Error classes hierarchy
+
+(Read more about each class in [builtin errors](/docs/Principals/Builtins/Errors.md) docs)
+
++ Validation:
+  - Value
+  - Type:
+      * Casting:  // Abstract?
+          + NotImplementedCasting
+          + ImplicitCasting
+  - ConstantModification
+  - FinalMethod
+
++ Lookup:
+  - Name
+  - Index:
+      * StopIteration
+  - Attribute
+  - Key
+  - ModuleNotFound
+  - Reference
+
++ Core:
+  - Syntax
+  - Internal
+  - System
+
++ KeyboardInterrupt
+
++ Import
+
++ Recursion
+
++ Timeout
+
++ PermissionError
+
++ Assertion
