@@ -68,34 +68,26 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 + Validation:
   - Value
   - Type:
-      * Casting:  // Abstract?
+      * Casting:
           + NotImplementedCasting
           + ImplicitCasting
-  - ConstantModification
-  - FinalMethod
 
 + Lookup:
   - Name
-  - Index:
-      * StopIteration
+  - Key:
+    * Index
   - Attribute
-  - Key
   - ModuleNotFound
   - Reference
 
-+ Core:
-  - Syntax
-  - Internal
-  - System
-
-+ KeyboardInterrupt
-
-+ Import
-
-+ Recursion
-
-+ Timeout
-
 + PermissionError
+  - ConstantModification
+  - FinalMethod
+  - FactoryRedefinition
 
++ Syntax
++ Internal
++ KeyboardInterrupt
++ Recursion
++ Timeout
 + Assertion
