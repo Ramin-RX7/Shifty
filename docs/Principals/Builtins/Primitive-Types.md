@@ -75,8 +75,6 @@ Both of these elements can be directly used in the code but no trace of `Boolean
 All conditions (e.g if-else, while) will implicitely be casted to Boolean elements. This happens via `bool` function mentioned above.
 This casting is possible to fail as some types might not implement casting to `Boolean`.
 
-> (Waiting for decision) `Boolean` enum be hidden from users
-
 
 
 ## null
@@ -84,7 +82,5 @@ This casting is possible to fail as some types might not implement casting to `B
 `null` is used to define a variable that does not hold a value. Essentially it shows the lack of value. The usage of this comes in handy in conjuction with `Optional`s where a certain operation might result in error but needs to be caught.
 
 `null` is defined with an enum that contains only `null`.
-
-> (Waiting for decision) `Boolean` enum be hidden from users
 
 > Although the usage of null is not the same as `false` at all, `null` has a falsy value means in conditions it is converted to `false`. Also `null` is equal to itself only. `null` keyword can be used directly in the code.
