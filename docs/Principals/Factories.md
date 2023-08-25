@@ -1,7 +1,10 @@
 # Builtins: Factories
 
-Factories in this language are mostly called to things that can define a new data types.\
+Factories in this language are mostly called to things that can define a new data types.
+
 The behavior of them are also customizable in certain cases which makes them powerful.
+
+Factories can not be defined twice in the code and redefinition of them result in _[FactoryRedefinitionError](/docs/Principals/Builtins/Errors.md/#factoryredefinitionerror)_. This happens when a factory is being created in a `factories mapping` that already contains another factory with similar name.
 
 
 
@@ -55,7 +58,10 @@ When there are only limited number of instances of a type and all of them are al
     stdout(Direction.up)  -->  "Direction::up"
 
 As you can see, the attributes do not hold a value (these are called no-associated-value enums). The reason behind this is that the attribute name itself is also the value of itself. The attributes of enums must be straight forward to what they actually mean. If an attribute is possible to have different values, it means that enums are not suitable for that situation.\
-Enums are all immutable (not constant). This means an enum can be overwritten but it is not changeable (just like tuples).
+
+Enums are all immutable (not constant). This means they can not be changed (just like tuples).
+
+It's possible to define methods for enums.
 
 The type of all attributes of the enum is the name of the enum.
 
