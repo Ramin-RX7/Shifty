@@ -76,11 +76,14 @@ When trying to see if the instance contains something specific this method is us
 ### iter
 
 This method let the user use this instance in a for loop. Each round of for loop this method will be called. The return of this method will be set to the variable of for loop.\
-For example in **`for item in MyInstance`**, the `meta:iter` of _`MyInstance`_ is called and _`item`_ will hold return of it during the round.
+For example in **`for item of MyInstance`**, the `meta:iter` of _`MyInstance`_ is called and _`item`_ will hold return of it during the round.
 
-    func META:iter() {
+    func META:iter(previous_id) {
         ...
     }
+
+> Read more about for loops and how they work [here](/docs/Principals/For_Loop.md)
+
 
 
 ### call
