@@ -24,7 +24,7 @@ list of methods:
 
 > (waiting for decision) Should there be a method to initialize the instance implicitly when a variable is declared but not initialized by the user? if the language allow user to declare a variable without explicitely initializing it, this feature must exist.
 
-read more about `meta-methods` [here](/docs/principals/Classes/Methods/Metas.md)
+read more about `meta-methods` [here](/docs/principals/factories/classes/special_methods/metas.md)
 
 
 
@@ -43,7 +43,7 @@ List of unary operators:
 
 > Need decision to be made: `@ $ % ^ & * - ~`
 
-read more about `operator-methods` [here](/docs/principals/Classes/Methods/Operators.md)
+read more about `operator-methods` [here](/docs/principals/factories/classes/special_methods/operators.md)
 
 
 
@@ -51,4 +51,4 @@ read more about `operator-methods` [here](/docs/principals/Classes/Methods/Opera
 
 Casting methods let the class instance be converted to other types. This behavior is important as one of the key features of the language which is implicit casting uses these methods a lot.
 
-read complete doc of `operator-methods` [here](/docs/principals/Classes/Methods/Casting.md)
+read complete doc of `operator-methods` [here](/docs/principals/factories/classes/special_methods/casting.md)

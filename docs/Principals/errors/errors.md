@@ -4,7 +4,7 @@ In this language, we use class-based hierarchy for our error classes. This means
 
 > This means the root class of error hierarchy is `BaseError`
 
-Any error that is not caught, will terminate the program (read more about error handling [here](/docs/Principals/Error-Handling.md)).
+Any error that is not caught, will terminate the program (read more about error handling [here](/docs/Principals/errors/error_handling.md)).
 
 
 
@@ -63,7 +63,7 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 
 ### Error classes hierarchy
 
-(Read more about each class in [builtin errors](/docs/Principals/Builtins/Errors.md) docs)
+(Read more about each class in [builtin errors](/docs/Principals/builtins/errors.md) docs)
 
 + Validation:
   - Value

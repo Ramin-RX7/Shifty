@@ -69,7 +69,7 @@ This is the exact position where the object data is stored. As of now, only `att
 We can also have the value as a `Ref` object.
 
 #### const
-this key will declare whether this object is constant or not (read more about constants [here](//docs/Principals/Objects/Constants.md))
+this key will declare whether this object is constant or not (read more about constants [here](//docs/Principals/objects/constants.md))
 
 #### reference count
 Number of references this object currently has.

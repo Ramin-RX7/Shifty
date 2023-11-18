@@ -4,7 +4,7 @@ Factories in this language are mostly called to objects that are mostly used to 
 
 The behavior of them are also customizable in certain cases which makes them powerful.
 
-Factories can not be defined twice in the code and redefinition of them result in _[FactoryRedefinitionError](/docs/Principals/Builtins/Errors.md/#factoryredefinitionerror)_. This happens when a factory is being created in a `factories mapping` that already contains another factory with similar name.
+Factories can not be defined twice in the code and redefinition of them result in _[FactoryRedefinitionError](/docs/Principals/builtins/errors.md/#factoryredefinitionerror)_. This happens when a factory is being created in a `factories mapping` that already contains another factory with similar name.
 
 
 
@@ -12,7 +12,7 @@ Factories can not be defined twice in the code and redefinition of them result i
 
 ## Classes
 
-For details about classes please refer to [Classes](/docs/Principals/Classes/Classes.md) which is a dedicated part of documentation to classes
+For details about classes please refer to [Classes](/docs/Principals/factories/classes/classes.md) which is a dedicated part of documentation to classes
 
 > All of the builtin methods are defined as final which means no method/attribute can be overwritten in builtin types. Even classes that inherit from them.
 

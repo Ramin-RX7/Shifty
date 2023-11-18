@@ -82,7 +82,7 @@ For example in **`for item of MyInstance`**, the `meta:iter` of _`MyInstance`_ i
         ...
     }
 
-> Read more about for loops and how they work [here](/docs/Principals/For_Loop.md)
+> Read more about for loops and how they work [here](/docs/Principals/control_flow/for_loop.md)
 
 
 

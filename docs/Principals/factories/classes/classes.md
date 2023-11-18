@@ -13,7 +13,7 @@ All classes inherit from default `type` class that is already implemented in the
 
 As the instances might be needed to be shown in the output, classes should implement `Cast:String` method for them.\
 Default implementation for `Cast:String` method returns `${objectType}::${objectId}`  (implemented in `type` class)\
-(read more in [Casting](/docs/principals/Classes/SpecialMethods.md#casting-methods-type-conversion))
+(read more in [Casting](/docs/principals/factories/classes/special_methods/special_methods.md#casting-methods-type-conversion))
 
 
 
@@ -52,4 +52,4 @@ Static methods are not associated with instances or the class itself. They can w
 
 Special methods are related to class behavior in more general purposes.
 These methods implement extra bits to objects.
-> They are documented in the [SpecialMethods.md](/docs/principals/Classes/SpecialMethods.md)
+> They are documented in the [SpecialMethods.md](/docs/principals/factories/classes/special_methods/special_methods.md)

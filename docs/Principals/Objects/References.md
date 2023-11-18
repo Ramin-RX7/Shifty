@@ -52,7 +52,7 @@ When setting reference of a variable as another variables value, basically what 
 
 Different use of this:
 
-- When sending them as a function argument, the actual object will be sent. (read more [here](/docs/principals/Functions.md/#parameters))\
+- When sending them as a function argument, the actual object will be sent. (read more [here](/docs/principals/factories/functions.md/#parameters))\
 - When trying to set a new value to a variable but still need previous.\
 - When we want to make an alias for a variable
 
