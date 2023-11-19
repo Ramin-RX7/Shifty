@@ -139,6 +139,12 @@ _derived from [PermissionError](#permissionerror)_
 This error is thrown when trying to define a factory with a name that exists in the current `factories mapping`.
 
 
+## FactoryNameConflictError
+_derived from [PermissionError](#permissionerror)_
+
+This error is raised when a factory is declared with a name that already exists in the `variables mapping`
+
+
 ## FinalOverrideError
 _derived from [PermissionError](#permissionerror)_
 
@@ -182,5 +188,7 @@ _derived from [BaseError](#baseerror)_
 This error is thrown when an `assert` statement fails.
 
 
+## EndOfIteration
+_derived from [BaseError](#baseerror)_
 
-
+This error is thrown when an iterator has been completely iterated through so the `for` loop understands the loop has ended
