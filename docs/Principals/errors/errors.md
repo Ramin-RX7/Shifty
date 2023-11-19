@@ -66,11 +66,11 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 (Read more about each class in [builtin errors](/docs/Principals/builtins/errors.md) docs)
 
 + Validation:
-  - Value
-  - Type:
-      * Casting:
-          + NotImplementedCasting
-          + ImplicitCasting
+  - InvalidValue
+  - InvalidType
+    * Casting:
+      + NotImplementedCasting
+      + ImplicitCasting
 
 + Lookup:
   - Name
@@ -82,8 +82,9 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 
 + PermissionError
   - ConstantModification
-  - FinalMethod
+  - FinalOverride
   - FactoryRedefinition
+  - FactoryNameConflict
 
 + Syntax
 + Internal
@@ -91,3 +92,4 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 + Recursion
 + Timeout
 + Assertion
++ EndOfIteration

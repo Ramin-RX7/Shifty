@@ -30,7 +30,7 @@ The foundation of the error classes hierarchy is the `BaseError` class. When att
             return false
         }
         {cast}String(){
-            return self.type.name + ": " + self.message
+            return typeof(self).name + ": " + self.message
         }
     }
 
@@ -188,7 +188,7 @@ _derived from [BaseError](#baseerror)_
 This error is thrown when an `assert` statement fails.
 
 
-## EndOfIteration
+## EndOfIterationError
 _derived from [BaseError](#baseerror)_
 
 This error is thrown when an iterator has been completely iterated through so the `for` loop understands the loop has ended
