@@ -46,6 +46,10 @@ Differences between `Structs` and `Classes`:
     Dictionary -> A set of key-value pairs by attribute name and it's corresponding value.
 
 
+### why to use structs
+- Structs are useful due to their immutability
+- Structs can be used over dictionary when a specific structure needs to be used (nothing more or less)
+
 
 
 ## Enums
