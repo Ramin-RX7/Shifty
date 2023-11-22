@@ -45,6 +45,9 @@ Functions defined in the class body with a special `class method` sign (implemen
 
 ### static methods
 
+> (Waiting for decision)
+>> if a class needs static methods it's better to make a module for it and define those methods outside of the class
+
 Static methods are not associated with instances or the class itself. They can work independently even if we take them outside of the class. But as they are only used within the class related functionalities, they are defined in the class. (The syntax must be like class-methods)
 
 
