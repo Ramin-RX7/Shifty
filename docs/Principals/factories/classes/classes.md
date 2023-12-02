@@ -23,36 +23,8 @@ attributes and methods can be either public or private (they must be public by d
 Public attributes/methods can be accesses from anywhere in the code but private ones can only be accessed in the class body.\
 If a class inherit from another class with a private attribute, child class can have access to the private attribute, though it can not change the visibility of it. The same thing goes for public ones which the child class can not change their visibility.\
 
-> Static methods can not be private
-
-
-
 
 
 ## Methods
 
-### instance methods
-
-(No general explaination) All normal functions defined in class body will be treated as instance methods.
-The `self` argument must be sent to the function automatically by the language and must not be seen in the method signature.
-
-
-### class methods
-
-Class methods are associated with the class itself rather than instances.\
-Functions defined in the class body with a special `class method` sign (implemented in the syntax), are not accessible by instances and instead, the name of the class is required to be able to use them from outside of the class (if they are public).
-
-
-### static methods
-
-> (Waiting for decision)
->> if a class needs static methods it's better to make a module for it and define those methods outside of the class
-
-Static methods are not associated with instances or the class itself. They can work independently even if we take them outside of the class. But as they are only used within the class related functionalities, they are defined in the class. (The syntax must be like class-methods)
-
-
-### Special methods
-
-Special methods are related to class behavior in more general purposes.
-These methods implement extra bits to objects.
-> They are documented in the [SpecialMethods.md](/docs/principals/factories/classes/special_methods/special_methods.md)
+Methods are separately documented in [methods](/docs/principals/factories/classes/methods.md)
