@@ -15,7 +15,21 @@ No variables are allowed to be created with a name that exists in this mapping. 
 ## Functions
 
     {
-        "type": "function",  // methods have the same structure except their type is `method`
+        "type": "function",
+        "data": {
+            "tasks": TaskObject_structure  // read more about `Task` in it's own doc
+            "container": {
+                "ATTR_NAME": VALUE
+            }
+        }
+    },
+
+
+## Methods
+
+    {
+        "type": "function",
+        "access_identifier":  "public" or "private",
         "data": {
             "tasks": TaskObject_structure  // read more about `Task` in it's own doc
             "container": {
