@@ -18,6 +18,9 @@ No variables are allowed to be created with a name that exists in this mapping. 
         "type": "function",  // methods have the same structure except their type is `method`
         "data": {
             "tasks": TaskObject_structure  // read more about `Task` in it's own doc
+            "container": {
+                "ATTR_NAME": VALUE
+            }
         }
     },
 
