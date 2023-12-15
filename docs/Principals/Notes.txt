@@ -1,34 +1,42 @@
-Enums (also support methods (on class))
-
-Structs (same as classes but with no methods)
-
 Classes:
     "final" decorator same as python but strict
     "dataclass" decorator
 
-For primitive types like "int", how to implement math operations.
+
+
+
+For primitive types like "int", how to implement math operations?
+
+
 
 
 Set the function prototype constant. This means if it is inherited it can not overwrite the prototype.
-> This can be done with making two decorators:
-        1. final_prototype: the argument name/count and data type can not be changed.
-        2. final_prototype_flexible: the argument name/count can not be changed but data type is not important.
+    - final_prototype decorator: the argument name/count and data type can not be changed.
+
+
+
+
+waiting for doc:
+- call stack
+- How does Task, InterruptibleTask work
+
+
+
+
+Not implemented errors:
+- OS
+- ZeroDevision
+- Memory
+- StopIteration
+- Import
+- System
+
+
 
 
 
 STD Lib:
 
 Types:
-    Union     (Used to group types)
-    Literal   (Only given objects)
-    Iterable  (Must implement "Meta-Iter")
-    Callable  (Must implement "Meta-Call")
-    Sequence  (Must implement "Meta-Iter", "Meta-Contains" and "Meta-Get")
-    Optional  (Same as "Union(MyType,null)")
-    Supports  (Must implement given attr/method)
-    Conditional (A call to given function determines wether given type meets the requirements or not.)
-    Displayable  (Can be casted to String)
     FreeList  (Same as lists without restriction of having elements with same type)
-    Number    (Union of Integer and Float)
-    Castable  (Must be able to cast to given types)
    #AssignedValueEnums (Same as enums but able to set values to their attributes)
