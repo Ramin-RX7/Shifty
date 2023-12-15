@@ -15,15 +15,20 @@ Table of accessibility in function bodies:
 > *variables: this refers to instances (of any type) created outside of function body\
 > *constants: even though constants are instances of a type, but their immutability makes them available to use in functions
 
-Even though restricting variable access to functions makes them purer, there is a way to access objects within the function scope. This can happen when passing a reference as an argument to the function (This is explained in [Parameters](#parameters) section).
+Even though restricting variable access to functions makes them purer, there is a way to access objects within the function scope. This can happen when passing a reference as an argument to the function (This is explained in [Parameters](#reference-parameters) section).
 
-Function overloading will not be supported since functions must be able to only perform one task that can be done on any type of parameters they accept. In `f(x)` if `x` can be of both `MyClass` and `OtherClass`, main body of the function should not differ for each of these types. Instead the data that is needed from their instances must be mined on the first lines of the function via if-elif-else clause and the rest of the function must be the same. If function body differs for different types of parameters, a new function must be defined for that purpose.
+Function overloading will not be supported since functions must be able to only perform one task that can be done on any type of parameters they accept. In `f(x)` if `x` can be of both `MyClass` and `OtherClass`, main body of the function should not differ for each of these types. Instead the data that is needed from their instances must be mined on the first lines of the function via if-elsif-else clause and the rest of the function must be the same. If function body differs for different types of parameters, a new function must be defined for that purpose.
 
 
 ## Parameters
 
 When a function is called with arguments, a copy of all of the given arguments are created, then sent to the function.
 So when the function executes, it will receive new (copied) objects which will be destroyed when the function returns.
+
+In function prototype declaration, the acceptable type of each parameter can be set. Unlike other languages where parameter types are used for memory efficiency (and obviously function call validation), in `Shifty` parameter types are only used in validating function calls.\
+Although parameter types can be defined using a single simple type, functions can have different conditions and policies for each of their parameters using [Unions](/docs/principals/objects/types.md) and other [Conditionals](/docs/principals/objects/type_validation.md/).
+
+When declaring the function prototype, if the argument type is not a type which inherits from `Conditional`, By default it will be translated to `Castable(GIVEN_TYPE)` and implicit casting will be applied in calls. Read [more](/docs/principals/objects/type_validation.md/)
 
 
 ### Reference parameters
