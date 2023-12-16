@@ -1,5 +1,7 @@
 # Loops
 
+> (Waiting for decision) Although the whole section below looks alright but still it is related to dynamic object creation concept where all statements must return something
+
 Loops works the same as other languages with addition of returning completion method and an object.
 
 Loops will return two values:
