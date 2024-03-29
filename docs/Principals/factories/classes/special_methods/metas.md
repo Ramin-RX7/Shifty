@@ -12,15 +12,6 @@ As this is not quite clear without examples, maybe taking a look at the methods 
 > The syntax used to define meta methods in the examples provided below are not the real syntax. They are just for the demonstration.
 
 
-### equals
-
-To check when 2 objects have the same value. This means using `==` after an object will call this method with sending the object on the right side of the operator.
-
-    func META:equals(other_object:Any) -> Boolean {
-        ...
-    }
-
-
 ### get
 
 When user tries "instance`[item]`" this method will return the result. This is mostly used to add indexing option to the type.\
