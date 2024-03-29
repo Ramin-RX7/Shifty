@@ -11,7 +11,7 @@ These special types of functions can pause themselves, return a value, then agai
 
 Let's see how they exactly they work with a useful example:
 
-we have a list of numbers and we want to get the even numbers
+we have a array of numbers and we want to get the even numbers
 
 first way to do this is:
 

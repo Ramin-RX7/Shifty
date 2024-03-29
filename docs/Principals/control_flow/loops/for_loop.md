@@ -47,7 +47,7 @@ When encountering the for loop, `iter` will be called with giving no argument. S
 
 Now in the next round, the loop will call iter with the identifer it recerived from the last call (which was `0`). Again the logic of the iteration will be executed and so we go to the next round.
 
-This however has a slightly big issue. In the fourth round we will encounter the `IndexError` since the `self.letters[new_identifier]` will tries to get an element out of the `letters` list bound. So what to do in these situation?
+This however has a slightly big issue. In the fourth round we will encounter the `IndexError` since the `self.letters[new_identifier]` will tries to get an element out of the `letters` array bound. So what to do in these situation?
 
 For loops will be executed eternally until an `EndOfIteration` error is raised within the `iter` call. So we can define a logic in the `iter` to raise this error when the for loop needs to end. Let's rewrite the example with handling the error we mentioned.
 
