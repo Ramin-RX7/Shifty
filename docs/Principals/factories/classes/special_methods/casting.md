@@ -40,12 +40,10 @@ User can use this method to explicitly cast to other types.
 
 The difference between implicit and explicit casting is the error they raise when they can not find the needed method.\
 In explicit, user will face `NotImplementedCasting` error but in implicit, `ImplicitCasting` error.\
-Since both of these errors derive from `Casting` error, they can be caught separately and/or together
-
+Since both of these errors are derived from `Casting` error, they can be caught separately and/or together.
 
 
 > (Waiting for decision) Access the casting methods directly. This makes the code much better when argument is needed in casting.
-
 
 > Note: the section below is not yet approved (Waiting for decision).
 

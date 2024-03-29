@@ -69,7 +69,7 @@
 ## Booleans (true/false)
 
 `Boolean` must be a builtin enum in the language, which only contains 2 elements: `true` and `false`.\
-These two detemine wether a condition is met or not.
+These two detemine whether a condition is met or not.
 Both of these elements can be directly used in the code but no trace of `Boolean` itself can be seen in the code.
 
 All conditions (e.g if-else, while) will implicitely be casted to Boolean elements. This happens via `bool` function mentioned above.

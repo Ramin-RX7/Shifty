@@ -101,6 +101,6 @@ Some algorithms to stop cyclic references when using marks-and-sweep: Cheney's a
 **Object Pooling System**:
 
 - Using object-pooling and concurrent garbage collection system at the same time (hybrid grabage collector)
-- Users be able to set a flag when making classes to indicate wether objects of this class should be pooled in object pooling system or not.
+- Users be able to set a flag when making classes to indicate whether objects of this class should be pooled in object pooling system or not.
 - ? Using a fixed size object pooling system or dynamic sized?
 - ? Let the size of the pool be configurable by user?

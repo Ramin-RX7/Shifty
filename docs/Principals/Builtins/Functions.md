@@ -64,7 +64,7 @@ Prompts for the user input. reads a line and return it as String.
 
     func issubclass(class_:type, parent_class:type) -> bool;
 
-Determines wether the `class_` is a subclass of `parent_class`
+Determines whether the `class_` is a subclass of `parent_class`
 
 <br>
 
@@ -72,7 +72,7 @@ Determines wether the `class_` is a subclass of `parent_class`
 
     func is_of(class_, classes:Union) -> bool;
 
-Detemines wether a class is in the list of classes a Union holds
+Detemines whether a class is in the list of classes a Union holds
 
 <br>
 
