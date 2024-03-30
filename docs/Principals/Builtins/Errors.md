@@ -46,13 +46,13 @@ Thrown when a validation fails. It is used when a data input is unknown and when
 _derived from [ValidationError](#validationerror)_
 
 This error is thrown when an invalid type is provided, typically occurring in function calls.
-It's important to note that InvalidTypeError should not be confused with CastingError. The TypeError can arise when working with Unions or other validation scenarios where a type is expected to implement a certain method or fulfill a specific condition but fails to do so.
+It's important to note that `InvalidTypeError` should not be confused with `CastingError`. The `InvalidTypeError` can arise when working with Unions or other validation scenarios where a type is expected to implement a certain method or fulfill a specific condition but fails to do so.
 
 
 ## CastingError
 _derived from [InvalidTypeError](#invalidtypeerror)_
 
-The CastingError type of error is associated with issues related to casting. While this error is not directly utilized by the language, users can employ it when necessary.\
+The `CastingError` type of error is associated with issues related to casting. While this error is not directly utilized by the language, users can employ it when necessary.\
 The existence of this error class is mainly to serve as the base class for `ImplicitCastingError` and `NotImplementedCastingError`, allowing users to catch both error types simultaneously.
 
 
@@ -98,13 +98,13 @@ The KeyError has to be raised when an attempt is made to use the `Meta:get` meth
 ## IndexError
 _derived from [KeyError](#keyeerror)_
 
-The IndexError is raised when an attempt is made to access an index on an object that does not exist. This error occurs when working with objects that have indexed elements, such as arrays or lists, and an out-of-bounds index is provided. The IndexError is a subcategory of the broader KeyError and LookupError hierarchy since it is raised due to invalid use of `Meta:get`
+The `IndexError` is raised when an attempt is made to access an index on an object that does not exist. This error occurs when working with objects that have indexed elements, such as arrays or lists, and an out-of-bounds index is provided. The `IndexError` is a subcategory of the broader KeyError and LookupError hierarchy since it is raised due to invalid use of `Meta:get`
 
 
 ## AttributeError
 _derived from [LookupError](#lookuperror)_
 
-The AttributeError is raised when an attempt is made to access an attribute on an object that does not exist within its type. This commonly occurs when trying to access attributes/methods that the object's class does not have.
+The `AttributeError` is raised when an attempt is made to access an attribute on an object that does not exist within its type. This commonly occurs when trying to access attributes/methods that the object's class does not have.
 
 
 ## ModuleNotFoundError
@@ -124,7 +124,7 @@ In some rare cases a variable in `variables mapping` can point to an object id t
 _derived from [BaseError](#baseerror)_
 
 This error is raised when attempting to perform actions that violate required conditions. It serves as a base class for errors associated with permission-related violations, such as redefining a factory, modifying a constant, overriding a final method, or attempting actions that are not allowed in specific contexts.\
-PermissionError is typically meant to be derived by other classes and is less commonly used directly.
+`PermissionError` is typically meant to be derived by other classes and is less commonly used directly.
 
 
 ## ConstantModificationError

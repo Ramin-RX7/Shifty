@@ -111,7 +111,7 @@ Probably the most important meta method is `constructor`. The constructor will i
 ### destructor
 
 Unlike constructor which is the most used meta method, the destructor is one of the least used meta methods.\
-This method handles what should happen when deleting the instance. The important part of this method that must not be forgotten is that it will be called before the language handle the deletion of it from the _`objects mapping`_ \
+This method handles what should happen when deleting the instance. The important part of this method that must not be forgotten is that it will be called before the language handle the deletion of it from the _`objects mapping`_
 
 > destructors are mostly used for cleanups that need to be done outside of the instance.
 

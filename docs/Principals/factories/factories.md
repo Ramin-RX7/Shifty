@@ -4,8 +4,7 @@ Factories in this language are mostly called to objects that are mostly used to 
 
 The behavior of them are also customizable in certain cases which makes them powerful.
 
-Factories can not be defined twice in the code and redefinition of them result in _[FactoryRedefinitionError](/docs/Principals/builtins/errors.md/#factoryredefinitionerror)_. This happens when a factory is being created in a `factories mapping` that already contains another factory with similar name.
-
+Factories can not be defined twice in the code and redefinition of them result in _[FactoryRedefinitionError](/docs/Principals/builtins/errors.md/#factoryredefinitionerror)_. This happens when a factory is being created in a [factories mapping](./factories_mapping.md) that already contains another factory with similar name.
 
 
 
@@ -43,12 +42,12 @@ Differences between `Structs` and `Classes`:
 **Casting Methods**:
 
     String -> A constructor like string.
-    Dictionary -> A set of key-value pairs by attribute name and it's corresponding value.
+    Mapping -> A set of key-value pairs by attribute name and it's corresponding value.
 
 
 ### why to use structs
 - Structs are useful due to their immutability
-- Structs can be used over dictionary when a specific structure needs to be used (nothing more or less)
+- Structs can be used over mappings when a specific structure needs to be used (nothing more or less)
 
 
 

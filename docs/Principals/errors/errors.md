@@ -8,7 +8,7 @@ Any error that is not caught, will terminate the program (read more about error 
 
 
 
-## Attributes:
+## Attributes
 
   - `message`: message shown to user when error is thrown
   - `cause`: The underlying cause of the error (null or another error instance).
