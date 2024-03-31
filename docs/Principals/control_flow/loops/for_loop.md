@@ -64,3 +64,11 @@ For loops will be executed eternally until an `EndOfIteration` error is raised w
     ...
 
 This is a good solution that will block the loop execution after reaching the maximum letters list length.
+
+
+
+## Advantages/Disadvantages
+
+- This way if a specific offset want to be given for the iteration it is possible.
+
+- It makes it harder to implement `META:Iter` for types since they're complicated; Using `yield` can help a lot for this situation
