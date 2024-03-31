@@ -4,10 +4,7 @@ Classes are (Probably) the most used factory in the language. User can define cl
 
 > No more general info about classes are provided here, only language-specific parts!
 
-
-Attributes can only be set in the class and no new attribute can be defined outside of the body (This does not mean the values of the attributes can not change).
-
-Classes can have class variables/attributes which is a shared attribute accross all instances. These attributes are all read-only for the instances and their value can only be changed in the class body.
+Classes can have class variables/attributes which is a shared attribute accross all instances.
 
 All classes inherit from default `type` class that is already implemented in the language.
 
@@ -23,6 +20,9 @@ attributes and methods can be either public or private (they must be public by d
 Public attributes/methods can be accesses from anywhere in the code but private ones can only be accessed in the class body.\
 If a class inherit from another class with a private attribute, child class can have access to the private attribute, though it can not change the visibility of it. The same thing goes for public ones which the child class can not change their visibility.\
 
+### (Waiting for decision) Shilded attributes
+
+Using this access modifier will limit the attribute modification to the class body. Outside of the class body, these attributes can only be retrieved but not changed.
 
 
 ## Methods
