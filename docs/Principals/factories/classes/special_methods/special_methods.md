@@ -32,13 +32,13 @@ read more about `meta-methods` [here](/docs/principals/factories/classes/special
 
 these methods handle how instances should behave when used in different operators.
 
-List of binary operators:
+Some of binary operators:
 - "**+**"
 - "**-**"
 - "**\***"
 - "**/**"
 
-List of unary operators:
+Some of unary operators:
 - "**!**"
 
 > Need decision to be made: `@ $ % ^ & * - ~`

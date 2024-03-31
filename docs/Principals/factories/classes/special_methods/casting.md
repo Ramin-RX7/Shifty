@@ -47,7 +47,7 @@ Since both of these errors are derived from `Casting` error, they can be caught 
 
 > Note: the section below is not yet approved (Waiting for decision).
 
-Also there is another final method in `Type` named `from`. `from` is a class method which is opposite of `as()`.\
+Also there is another final method in `Type` named `from`. `from` is a class method which is opposite of `as()`.
 
     // using previous example functions and classes
     a_as_otherClass = OtherClass.from(a)

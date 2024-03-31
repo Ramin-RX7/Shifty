@@ -27,7 +27,7 @@
 
     Constructor(object:Primitive) -> Float {...};
     Equals ->  "true" only if both numbers are equal
-    Copy   ->  A new Integer object of same number
+    Copy   ->  A new Float object of same number
 
 **Casting methods:**
 
@@ -72,8 +72,7 @@
 These two detemine whether a condition is met or not.
 Both of these elements can be directly used in the code but no trace of `Boolean` itself can be seen in the code.
 
-All conditions (e.g if-else, while) will implicitely be casted to Boolean elements. This happens via `bool` function mentioned above.
-This casting is possible to fail as some types might not implement casting to `Boolean`.
+All conditions (e.g if-else, while) will implicitely be casted to Boolean elements. This casting is possible to fail as some types might not implement casting to `Boolean`.
 
 
 
