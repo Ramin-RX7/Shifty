@@ -17,6 +17,8 @@ Table of accessibility in function bodies:
 
 Even though restricting variable access to functions makes them purer, there is a way to access objects within the function scope. This can happen when passing a reference as an argument to the function (This is explained in [Parameters](#reference-parameters) section).
 
+Basically this limitation means that you can not access any variable of outer scope VM.
+
 Function overloading will not be supported since functions must be able to only perform one task that can be done on any type of parameters they accept. In `f(x)` if `x` can be of both `MyClass` and `OtherClass`, main body of the function should not differ for each of these types. Instead the data that is needed from their instances must be mined on the first lines of the function via if-elsif-else clause and the rest of the function must be the same. If function body differs for different types of parameters, a new function must be defined for that purpose.
 
 
@@ -37,6 +39,8 @@ When defining functions, it's possible to define a parameter that receives only 
 This way you can manipulate with objects defined outside of the function.\
 If a function parameter is set to accept references, when calling the function, only references are acceptable and normal variables will result in error.\
 But when the parameter is declared normally, and in a certain call a reference is passed, not only no error will be raised but also the real object (not the copy of it), will be passed to the function.
+
+> (Waiting for decision) Shouldn't this be opposite? If a parameter is set for reference, it must be able to accept normal argument pass but when it is declared normally, it can not accept reference (Since it might break the object in any unknown way).
 
 
 ### read-only parameters
