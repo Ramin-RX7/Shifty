@@ -25,6 +25,7 @@ This means that this class can now be used in `==` operation.
 Here's the list of operators:
 
 - Comparison: `==`, `!=`, `>`, `>=`, `<`, `<=`
+- Mathematical: `+`, `-`, `*`, `/`, `%`, `//`
 - Logical: `^`, `||`, `&&`
 - Unary: `~`
 

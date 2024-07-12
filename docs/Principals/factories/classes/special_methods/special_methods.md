@@ -11,7 +11,6 @@ These methods are the ones to handle and manipulate the instance of the class in
 
 list of methods:
 
-- **equals**: when using "**`==`**" operator
 - **get**: when using "instance`[item]`" (this also works on slices)
 - **set**: when using "**instance[item] = ...**"
 - **hash**: to get a hash of the instance (this should method will be used when `equals` is not defined)
