@@ -1,0 +1,4 @@
+- what happens if the `type` field in OMV point to a factory that does not exist?
+- Ref() objects in VM
+- Type validation Interaction with Inheritance? If `A` inherits from `B`, and a `Union` allows `B`, does it implicitly allow `A`? what about the reverse?
+- containerizing function must explicitly mention type and name of attributes
