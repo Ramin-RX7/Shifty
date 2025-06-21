@@ -5,7 +5,7 @@ All objects have a type. Their type is the class they are initialized by. As the
 > Though this document might be related to classes and must be mentioned in Classes section, functions parameter and return types also make their way into this topic too. This will lead to this situation where Types have their own doc independent from Classes and Function.
 # Unions
 
-Function parameters are not strictly typed, but if their type is specified in their signature then it is important to verify each call to the function comes with correct argument type. If a function parameter wants to accept several types, or a particular function wants to have different return types (based on given arguments), `Unions` will come in handy.\
+Function parameters are not strictly typed, but if their type is specified in their signature then it is important to verify each call to the function comes with correct argument type. If a function parameter wants to accept several types, or a particular function wants to have different return types (based on given arguments), `Unions` will come in handy.
 Unions are a way to set multiple acceptable types to variables.
 > Having Union return type for functions is discouraged (but not disallowed).
 

@@ -120,7 +120,7 @@ This is the exact position where the object data is stored. As of now, only `att
 `attributes` will be another mapping that holds the attribute names as the key and a OMV as it's value. The reason is that the attribute will hold an object and that object must follow the convention used for any other object in the language.
 We can also have the value as a `Ref` object.
 ### const
-this key will declare whether this object is constant or not (read more about constants [here](//docs/Principals/objects/constants.md))
+this key will declare whether this object is constant or not (read more about constants [[constants]])
 ### reference count
 Number of references this object currently has.
 
@@ -128,9 +128,9 @@ Number of references this object currently has.
 
 ## Declaring variable type
 
-Variables must be initialized in their declaration time.\
-Variables are not forced to explicitly define their type in declaration.\
-function parameters must declare their type.\
+Variables must be initialized in their declaration time.
+Variables are not forced to explicitly define their type in declaration.
+function parameters must declare their type.
 function return type is neccessarily but can be dropped in syntax if no return is in the function.
 
 # Todo/Notes of this doc:

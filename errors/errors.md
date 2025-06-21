@@ -42,7 +42,7 @@ All error objects always have a false boolean value. This can not be overwritten
 
 # Error are catchable
 
-BaseError has the `catchable = true` which means any class inheriting from it will be catchable unless it sets the `catchable` explicitely to `false`.
+BaseError has the `catchable = true` which means any class inheriting from it will be catchable unless it sets the `catchable` explicitly to `false`.
 
 # Language mappings are not given by default
 
@@ -53,7 +53,7 @@ Due to inefficient task of sending and keeping all 3 mappings to an instance (an
 
 # Error classes hierarchy
 
-(Read more about each class in [builtin errors](/docs/Principals/builtins/errors.md) docs)
+(Read more about each class in [[builtins/errors|Errors]] docs)
 
 + Validation:
   - InvalidValue

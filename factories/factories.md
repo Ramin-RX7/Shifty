@@ -59,7 +59,7 @@ Direction.left
 stdout(Direction.up)  -->  "Direction::up"
 ```
 
-As you can see, the attributes do not hold a value (these are called no-associated-value enums). The reason behind this is that the attribute name itself is also the value of itself. The attributes of enums must be straight forward to what they actually mean. If an attribute is possible to have different values, it means that enums are not suitable for that situation.\
+As you can see, the attributes do not hold a value (these are called no-associated-value enums). The reason behind this is that the attribute name itself is also the value of itself. The attributes of enums must be straight forward to what they actually mean. If an attribute is possible to have different values, it means that enums are not suitable for that situation.
 
 It's possible to set value for enum attributes. However this requires few conditions:
 - All attributes must have a value. It's not possible to have a combination of value-associated and no-associated-value enums.

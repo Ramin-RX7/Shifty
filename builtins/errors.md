@@ -47,7 +47,7 @@ It's important to note that `InvalidTypeError` should not be confused with `Cast
 ### CastingError
 _derived from [InvalidTypeError](#invalidtypeerror)_
 
-The `CastingError` type of error is associated with issues related to casting. While this error is not directly utilized by the language, users can employ it when necessary.\
+The `CastingError` type of error is associated with issues related to casting. While this error is not directly utilized by the language, users can employ it when necessary.
 The existence of this error class is mainly to serve as the base class for `ImplicitCastingError` and `NotImplementedCastingError`, allowing users to catch both error types simultaneously.
 
 #### ImplicitCastingError
@@ -63,8 +63,8 @@ This error is raised when a user attempts to explicitly cast one type to another
 ## InvalidValueError
 _derived from [ValidationError](#validationerror)_
 
-The InvalidValueError is raised when a value is not valid for a specific parameter or context. This error type is intended to be used when the issue lies with the value of the object, rather than its type.\
-For instance, this error can be utilized when a parameter must fall within a certain range, but the provided value does not meet this requirement.\
+The InvalidValueError is raised when a value is not valid for a specific parameter or context. This error type is intended to be used when the issue lies with the value of the object, rather than its type.
+For instance, this error can be utilized when a parameter must fall within a certain range, but the provided value does not meet this requirement.
 While this error can serve as a general category, it can also be further specialized by deriving more specific error classes to convey the exact nature of the value validation error.
 
 # LookupError
@@ -105,7 +105,7 @@ In some rare cases a variable in `variables mapping` can point to an object id t
 # PermissionError
 _derived from [BaseError](#baseerror)_
 
-This error is raised when attempting to perform actions that violate required conditions. It serves as a base class for errors associated with permission-related violations, such as redefining a factory, modifying a constant, overriding a final method, or attempting actions that are not allowed in specific contexts.\
+This error is raised when attempting to perform actions that violate required conditions. It serves as a base class for errors associated with permission-related violations, such as redefining a factory, modifying a constant, overriding a final method, or attempting actions that are not allowed in specific contexts.
 `PermissionError` is typically meant to be derived by other classes and is less commonly used directly.
 
 ## ConstantModificationError
